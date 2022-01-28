@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
+
+    </header>
+    <body>
+        <div class="navbar">
+            <a href="rights.html">الحقوق</a>
+            <a href="collorful.html">الصفحة الرئيسية</a>
+          </div>
+        <p class="text">❤️صنع بكل حب من طلاب جامعة الامام </p>
+    </body>
+    <style>
+        .text{
+            font-family: 'Aref Ruqaa', serif;
+    font-size: 38px;
+        }
+        body{
+    margin: 0;
+    padding: 0;
+    background-color: #b2e0df;
+    animation: mymove 30s linear infinite alternate;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+@keyframes mymove {
+  0% {background-color: #b2e0df;}
+  50% {background-color: rgb(210, 145, 229);}
+  100%{background-color: rgb(250, 250, 106);}
+  
+  
+}
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 50%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+font-size: 20px;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #000000;
+  opacity: 100;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: overline ;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: rgba(221, 221, 221, 0.438);
+  opacity: 50%;
+  color: black;
+  text-decoration: underline overline;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+    </style>
+</html>
