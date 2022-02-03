@@ -2,7 +2,7 @@ IF YOU DON'T HAVE THE NAME COLUMN : ALTER TABLE yourtable ADD COLUMN name VARCHA
 
 TO UPDATE THE NAME COLUMN FOR ALL ENTRIES : UPDATE yourtable SET name = CONCAT(name_1, ' ',name_2, ' ', name_3);
 
-
+*NOTE name is the full name including name_1 name_2 name_3 //////// FLname is the name_1 and name_3 which is first and last name only*
 
 
 ----------------------------------------------------------------
