@@ -1,0 +1,21 @@
+IF YOU DON'T HAVE THE NAME COLUMN : ALTER TABLE yourtable ADD COLUMN name VARCHAR(50);
+
+TO UPDATE THE NAME COLUMN FOR ALL ENTRIES : UPDATE yourtable SET name = CONCAT(name_1, ' ',name_2, ' ', name_3);
+
+
+
+
+----------------------------------------------------------------
+TRIGGERS TO USE FOR AUTOMATICALLY UPDATE THE NAME COLUMN BUT BE CAREFUL AS THEY CAUSE PROBLEMS IN THE DB 
+
+----------------------
+
+CREATE TRIGGER insert_trigger
+BEFORE INSERT ON yourtable
+FOR EACH ROW
+SET new.name = CONCAT(name_1, ' ',name_2, ' ', name_3);
+
+CREATE TRIGGER update_trigger
+BEFORE UPDATE ON yourtable
+FOR EACH ROW
+SET new.name = CONCAT(name_1, ' ',name_2, ' ', name_3);
